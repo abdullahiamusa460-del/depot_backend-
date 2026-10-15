@@ -1,0 +1,37 @@
+{
+  "name": "depot-backend",
+  "version": "1.0.0",
+  "description": "Backend API for the Offline Beverage Shop POS & Inventory Management system",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "email:roles": "node src/sendRoleEmails.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "pos",
+    "inventory",
+    "beverage",
+    "mongodb",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^10.1.1",
+    "zod": "^3.24.1"
+  }
+}
